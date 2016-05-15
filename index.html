@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<title>Angular JS</title>
+</head>
+<body>
+	<form name="newForm">
+        Please enter your email
+        <br/>
+        Email:<input name="email" type="email" ng-model="email" placeholder="email" required/>
+        <br/><br/>
+		Name:<input name="nameText" type="text" ng-model="name" placeholder="Enter a name here" ng-disabled="newForm.email.$invalid" />
+		<br/>
+		<div new-directive></div>
+	</form>
+	<script src="angular.min.js"></script>
+	<script src="modules.js"></script>
+	<script src="controllers.js"></script>
+	<script src="directives.js"></script>
+</body>
+</html>
