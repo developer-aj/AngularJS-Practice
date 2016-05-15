@@ -7,3 +7,10 @@ app.controller('ctrl', function($scope) {
 		{name:'Emilia Clarke', city:'Meereen'}
 	];
 });
+
+app.run(function($rootScope) {
+    $rootScope.orderByX = "'name'",
+    $rootScope.changeOrderBy = function(x) {
+        $rootScope.orderByX = x;
+    }
+});
