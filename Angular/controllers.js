@@ -6,7 +6,4 @@ app.controller('ctrl', function($scope) {
 		{name:'Johny', city:'Phoenix'},
 		{name:'Emilia Clarke', city:'Meereen'}
 	];
-	$scope.display = function(object){
-		return object.name + " - " + object.city;
-	};
 });
