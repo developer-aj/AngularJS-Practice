@@ -3,20 +3,33 @@
 <html ng-app="app">
 <head>
 	<title>Angular JS</title>
-</head>
-<body>
-	<form name="newForm">
-        Please enter your email
-        <br/>
-        Email:<input name="email" type="email" ng-model="email" placeholder="email" required/>
-        <br/><br/>
-		Name:<input name="nameText" type="text" ng-model="name" placeholder="Enter a name here" ng-disabled="newForm.email.$invalid" />
-		<br/>
-		<div new-directive></div>
-	</form>
-	<script src="angular.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <script src="angular.min.js"></script>
 	<script src="modules.js"></script>
 	<script src="controllers.js"></script>
 	<script src="directives.js"></script>
+    <script src="bootstrap/jquery.min.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Angular JS</h1>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <form name="newForm">
+                    <br/>
+                    <p>Email:</p><input class="form-control" name="email" type="email" ng-model="email" placeholder="email" required/>
+                    <br/><br/>
+                    <p>Name:</p><input class="form-control" name="nameText" type="text" ng-model="name" placeholder="Enter a name here" ng-disabled="newForm.email.$invalid" />
+                    <br/>
+                    <div new-directive></div>
+                </form>
+            </div>
+      </div>
+    </div>
 </body>
 </html>
