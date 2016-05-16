@@ -8,8 +8,9 @@ app.controller('ctrl', function($scope) {
 	];
 });
 
-app.run(function($rootScope) {
-    $rootScope.orderByX = "'name'",
+app.run(function($rootScope, $location) {
+    $rootScope.orderByX = "name";
+    $rootScope.myUrl = $location.absUrl();
     $rootScope.changeOrderBy = function(x) {
         $rootScope.orderByX = x;
     }
